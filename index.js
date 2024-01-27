@@ -12,7 +12,7 @@ morgan.token('postData', (req, res) => {
 })
 
 app.use(morgan(':method :url :status :response-time ms :postData'));
-
+app.use(express.static('dist'))
 // mongodb+srv://milosdrinjakovicc:<password>@cluster0.czn1uep.mongodb.net/
 let phonebook = [
   {
